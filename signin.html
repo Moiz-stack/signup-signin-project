@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- Header Section -->
+    <header class="bg-white">
+        <!-- Top Bar -->
+        <nav class="container mx-auto flex justify-between py-1" style="width: 72%;">
+            <ul class="flex list-none m-0">
+                <li class="mr-2">
+                    <a class="text-[#000039] border-b border-[#000039]" href="#">Personal</a>
+                </li>
+                <li class="text-[9px] font-bold text-[#4a4a4a] mt-[4px]">|</li>
+                <li class="ml-2">
+                    <a class="text-[#4a4a4a] hover:border-b hover:border-[#4a4a4a]" href="#">Business</a>
+                </li>
+            </ul>
+            <ul class="flex ml-auto list-none m-0">
+                <li>
+                    <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]" href="#">Sign in or
+                        Register</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Main Bar -->
+        <nav class="bg-[#0019a5] h-[78px] flex items-center">
+            <div class="container mx-auto px-4 flex items-center justify-between" style="width: 75%;">
+                <div class="flex items-center">
+                    <img src="/signup-signin-project/Images/favicon.ico" alt="O2 Logo" class="mr-14 h-12" style="filter: brightness(0) invert(1);">
+                    <ul class="flex space-x-14">
+                        <li><a href="#" class="text-white hover:text-[#4194cd]">Shop</a></li>
+                        <li><a href="#" class="text-white hover:text-[#4194cd]">Why O2</a></li>
+                        <li><a href="#" class="text-white hover:text-[#4194cd]">Help</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300 mr-4">My O2</a>
+                    <a href="#" class="text-white hover:text-gray-300 mr-4">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <!-- Main Section -->
+    <section class="flex justify-around p-10">
+        <!-- Sign In Form Section -->
+        <div class="bg-white p-8 rounded-lg shadow-md w-2/5">
+            <h1 class="text-3xl text-blue-900 font-semibold">Sign in</h1>
+            <h2 class="text-xl mt-4">Sign in to My O2</h2>
+            <form action="#" class="mt-6">
+                <label for="username" class="block text-sm font-medium text-gray-700">Username (usually your email
+                    address)</label>
+                <input type="text" id="username" name="username" required
+                    class="w-full mt-2 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+
+                <label for="password" class="block text-sm font-medium text-gray-700 mt-6">Password</label>
+                <input type="password" id="password" name="password" required
+                    class="w-full mt-2 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+
+                <div class="flex items-center mt-6">
+                    <input type="checkbox" id="remember" name="remember"
+                        class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <label for="remember" class="ml-2 block text-sm text-gray-900">Remember my username</label>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-blue-900 text-white py-2 mt-6 rounded-md hover:bg-blue-700 transition">Sign
+                    in</button>
+                <a href="#" class="block mt-4 text-blue-900 text-sm">Forgotten your username or password?</a>
+            </form>
+        </div>
+
+        <!-- Side Information Section -->
+        <div class="w-2/5 space-y-6">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold">Already an O2 customer?</h2>
+                <p class="mt-4">If you've got a Pay Monthly account then we've automatically registered you with My O2
+                    and given you a username and password.</p>
+                <a href="#" class="text-blue-900 mt-4 inline-block">Help me sign in</a>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold">Not yet registered?</h2>
+                <p class="mt-4">If you're a Pay As You Go customer here are just some of the benefits of registering:
+                </p>
+                <ul class="list-disc pl-5 mt-4 space-y-2">
+                    <li>Check your usage and remaining balance</li>
+                    <li>Set up auto top-ups</li>
+                    <li>Manage O2 Rewards</li>
+                </ul>
+                <a href="#" class="text-blue-900 mt-4 inline-block">Register now</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
