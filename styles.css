@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #003399;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .navbar li {
+    list-style: none;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+  }
+  
+  .navbar .right a {
+    color: #003399;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .main-nav .logo {
+    height: 50px;
+  }
+  
+  .main-menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .main-menu li {
+    margin-right: 20px;
+  }
+  
+  .main-menu a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .register-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .register-container {
+    background-color: white;
+    padding: 40px;
+    width: 60%;
+    border-radius: 8px;
+  }
+  
+  .register-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #003399;
+  }
+  
+  .register-container p {
+    margin-bottom: 20px;
+  }
+  
+  .register-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-container form label {
+    margin-bottom: 10px;
+  }
+  
+  .register-container form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .continue-btn {
+    background-color: #ccc;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+  }
+  
+  .cancel-btn {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #003399;
+  }
+  
+  .side-info {
+    width: 30%;
+  }
+  
+  .already-customer, .contact-us {
+    margin-bottom: 40px;
+  }
+  
+  .already-customer h2, .contact-us h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .already-customer a, .contact-us a {
+    color: #003399;
+    text-decoration: none;
+  }
+  
