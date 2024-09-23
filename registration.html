@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" href="https://accounts.o2.co.uk/_assets_shared/img/o2.ico" /> 
     <title>Registration</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,9 +27,11 @@
             </ul>
             <ul class="flex ml-auto list-none m-0">
                 <li>
-                    <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]" href="signin.html">Sign in </a>
+                    <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]" href="index.html">Sign
+                        in </a>
                     <span>or</span>
-                    <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]" href="registration.html">
+                    <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]"
+                        href="registration.html">
                         Register</a>
                 </li>
             </ul>
@@ -64,49 +67,55 @@
     </div>
 
     <!-- Register Section -->
-    <section class="flex flex-col lg:flex-row justify-between p-8 lg:p-16 space-y-8 lg:space-y-0 lg:space-x-8">
+    <section class="flex justify-around ml-[124.500px] mr-[124.500px] mb-24">
         <!-- Register Form Container -->
-        <div class="bg-white p-8 rounded-lg shadow-lg w-full lg:w-2/3">
+        <div class="bg-white p-8  shadow-lg w-full lg:w-2/3">
 
-            <p class="mb-4">We need some information to set up your account. We treat your information in line with our
+            <p class="mb-4 text-sm">We need some information to set up your account. We treat your information in line
+                with our
                 <a href="#" class="text-blue-700 no-underlineunderline">Privacy Policy</a>.
             </p>
             <form class="space-y-6">
                 <div>
-                    <label for="email" class="block text-lg">Email address</label>
+                    <label for="email" class="block text-sm mb-2">Email address</label>
                     <input type="email" id="email" name="email" class="p-3 border w-1/2 border-gray-300 " required>
                 </div>
                 <div>
                     <button type="submit"
-                        class="w-1/1 px-5 bg-gray-400 text-white p-3 border border-gray-300 hover:bg-[#F8F8F8] transition">
+                        class="w-1/1 px-5 rounded-md bg-[#D8D8D8] text-white p-3 border border-gray-300 hover:bg-[#F8F8F8] transition">
                         Continue
                     </button>
                 </div>
                 <div>
-                    <a href="#" class="text-blue-700 no-underline">Cancel</a>
+                    <a href="#" class="text-[#419eda] mt-4 flex items-center hover:underline">
+                        <span class="bg-sky-500 rounded-full p-1 text-white w-4 h-4 flex justify-center items-center">
+                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </span>
+                        <span class="ml-2">Cancel</span>
+                    </a>
                 </div>
             </form>
         </div>
         <!-- Side Information Section -->
         <aside class="w-full lg:w-1/3">
 
-            <div class="p-8 rounded-lg border-none mb-4"> <!-- Added mb-4 to reduce space -->
-                <h2 class="text-xl mb-4 text-blue-950">Already an O2 customer?</h2>
-                <p class="mb-2">If you've got a Pay Monthly mobile phone, we've automatically registered you with My O2
+            <div class="p-8 ">
+                <h2 class="text-[26px]  text-blue-950 mb-2.5">Already an O2 customer?</h2>
+                <p class="pt-3.5 pb-3.5 text-sm">If you've got a Pay Monthly mobile phone, we've automatically
+                    registered you with My O2
                     and given you a username and password.</p>
 
-                <span class="bg-sky-500 rounded-full p-1 text-white inline-block w-5 h-5 mr-2">
-                    <span class="flex justify-center items-center">
+                <a href="#" class="text-[#419eda] mt-4 flex items-center hover:underline">
+                    <span class="bg-sky-500 rounded-full p-1 text-white w-4 h-4 flex justify-center items-center">
                         <i class="fa-solid fa-chevron-right text-[10px]"></i>
                     </span>
-                </span>
-                <a href="#" class="text-blue-700 no-underline">
-                    Help me sign in</a>
-            </div>
+                    <span class="ml-2">Help me sign in</span>
+                </a>
 
-            <div class="p-8 rounded-lg border-none"> <!-- No margin applied here -->
-                <h2 class="text-xl mb-4">Contact us</h2>
-                <p>For further assistance <a href="#" class="text-blue-700 no-underline">contact customer services</a>.
+            
+                <h2 class="text-[26px]  mt-6">Contact us</h2>
+                <p class="pt-2 pb-3.5 text-sm">For further assistance <a href="#"
+                        class="text-blue-700 no-underline">contact customer services</a>.
                 </p>
             </div>
         </aside>
