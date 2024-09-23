@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gjk{
+    
+    background: url(https://static.o2.co.uk/mymobile/img/default/page_header_bg.png) right top no-repeat;
+        background-size: 100% 100%;
+        
+    
+}
