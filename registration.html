@@ -9,72 +9,98 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header class="header">
-        <nav class=" container mx-auto flex justify-between py-2" style="width: 70%;">
+<body class="bg-gray-100 font-sans">
+    <!-- Header Section -->
+    <header class="bg-white">
+        <!-- Top Bar -->
+        <nav class="container mx-auto flex justify-between py-1" style="width: 72%;">
             <ul class="flex list-none m-0">
                 <li class="mr-2">
-                    <a class="text-[#000039] border-b border-[#000039] " href="#">Personal</a>
+                    <a class="text-[#000039] border-b border-[#000039]" href="#">Personal</a>
                 </li>
                 <li class="text-[9px] font-bold text-[#4a4a4a] mt-[4px]">|</li>
-
                 <li class="ml-2">
-                    <a class="text-[#4a4a4a] hover:border-b hover:border-[#4a4a4a] " href="#">Business</a>
+                    <a class="text-[#4a4a4a] hover:border-b hover:border-[#4a4a4a]" href="#">Business</a>
                 </li>
             </ul>
             <ul class="flex ml-auto list-none m-0">
-
                 <li>
-                    <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]" href="#">Sign in
-                        or Register</a>
+                    <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]" href="#">Sign in or
+                        Register</a>
                 </li>
             </ul>
         </nav>
-        <div class="main-nav">
-            <img src="logo.png" alt="O2 Logo" class="logo">
-            <ul class="main-menu">
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Why O2</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">My O2</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#"><img src="basket.png" alt="Basket"></a></li>
-            </ul>
-        </div>
+        <!-- Main Bar -->
+        <nav class="bg-[#0019a5] h-[78px] flex items-center">
+            <div class="container mx-auto px-4 flex items-center justify-between" style="width: 75%;">
+                <div class="flex items-center">
+                    <img src="/signup-signin-project/Images/favicon.ico" alt="O2 Logo" class="mr-14 h-12"
+                        style="filter: brightness(0) invert(1);">
+                    <ul class="flex space-x-14">
+                        <li><a href="#" class="text-white hover:text-[#4194cd]">Shop</a></li>
+                        <li><a href="#" class="text-white hover:text-[#4194cd]">Why O2</a></li>
+                        <li><a href="#" class="text-white hover:text-[#4194cd]">Help</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300 mr-4">My O2</a>
+                    <a href="#" class="text-white hover:text-gray-300 mr-4">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-
-
-
-
-    <div class="register-container" >
-        <h1>Register</h1>
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full mt-2">
+        <h1 class="text-4xl text-blue-900 mb-6 px-14">Register</h1>
     </div>
 
-    <section class="register-section">
-        <div class="register-container">
-            <p>We need some information to set up your account. We treat your information in line with our <a
-                    href="#">Privacy Policy</a>.</p>
-            <form action="">
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit" class="continue-btn" disabled>Continue</button>
-                <a href="#" class="cancel-btn">Cancel</a>
+    <!-- Register Section -->
+    <section class="flex flex-col lg:flex-row justify-between p-8 lg:p-16 space-y-8 lg:space-y-0 lg:space-x-8">
+        <!-- Register Form Container -->
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full lg:w-2/3">
+
+            <p class="mb-4">We need some information to set up your account. We treat your information in line with our
+                <a href="#" class="text-blue-700 no-underlineunderline">Privacy Policy</a>.
+            </p>
+            <form class="space-y-6">
+                <div>
+                    <label for="email" class="block text-lg">Email address</label>
+                    <input type="email" id="email" name="email" class="p-3 border w-1/2 border-gray-300 " required>
+                </div>
+                <div>
+                    <button type="submit" class="w-1/1 px-5 bg-gray-400 text-white p-3 border border-gray-300 hover:bg-gray-100 hover:border-black  rounded-lg">
+                        Continue
+                    </button>
+                </div>
+                <div>
+                    <a href="#" class="text-blue-700 no-underline">Cancel</a>
+                </div>
             </form>
         </div>
-        <aside class="side-info">
-            <div class="already-customer">
-                <h2>Already an O2 customer?</h2>
-                <p>If you've got a Pay Monthly mobile phone, we've automatically registered you with My O2 and given you
-                    a username and password.</p>
-                <a href="#">Help me sign in</a>
+        <!-- Side Information Section -->
+        <aside class="w-full lg:w-1/3">
+
+            <div class="p-8 rounded-lg border-none mb-4"> <!-- Added mb-4 to reduce space -->
+                <h2 class="text-xl mb-4 text-blue-950">Already an O2 customer?</h2>
+                <p class="mb-2">If you've got a Pay Monthly mobile phone, we've automatically registered you with My O2
+                    and given you a username and password.</p>
+                <a href="#" class="text-blue-700 no-underline">Help me sign in</a>
             </div>
-            <div class="contact-us">
-                <h2>Contact us</h2>
-                <p>For further assistance <a href="#">contact customer services</a>.</p>
+
+            <div class="p-8 rounded-lg border-none"> <!-- No margin applied here -->
+                <h2 class="text-xl mb-4">Contact us</h2>
+                <p>For further assistance <a href="#" class="text-blue-700 no-underline">contact customer services</a>.
+                </p>
             </div>
         </aside>
     </section>
+
 </body>
 
 </html>
