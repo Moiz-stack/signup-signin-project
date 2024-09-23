@@ -9,7 +9,6 @@
   }
   
   .header {
-    background-color: #003399;
     color: white;
   }
   
@@ -35,6 +34,7 @@
   }
   
   .main-nav {
+    background-color: #003399;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,3 +132,12 @@
     text-decoration: none;
   }
   
+
+  .register{
+    background-color: #ccc;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+  }
+
