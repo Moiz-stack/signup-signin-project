@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <link rel="stylesheet" href="./styles//signin-styles.css">
 </head>
-
 <body>
-<<<<<<< HEAD
-    <nav class="container mx-auto flex justify-between py-2" style="width: 70%;">
-        <ul class="flex list-none m-0">
 
-            <li class="mr-2">
-                <a class="text-[#000039] border-b border-[#000039] " href="#">Personal</a>
-            </li>
-            <li class="text-[9px] font-bold text-[#4a4a4a] mt-[4px]">|</li>
-
-            <li class="ml-2">
-                <a class="text-[#4a4a4a] hover:border-b hover:border-[#4a4a4a] " href="#">Business</a>
-            </li>
-        </ul>
-        <ul class="flex ml-auto list-none m-0">
-
-            <li>
-                <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]" href="#">Sign in
-                    or Register</a>
-            </li>
-        </ul>
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#" class="nav-link">Personal</a> |
+        <a href="#" class="nav-link">Business</a>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="nav-link">Sign in or Register</a>
+      </div>
     </nav>
-=======
-    
->>>>>>> d2a118dbcbdd53631d81c21e053dab7ed4524ebb
-</body>
+    <div class="nav-menu">
+      <img src="logo.png" alt="O2 Logo" class="logo">
+      <a href="#" class="menu-link">Shop</a>
+      <a href="#" class="menu-link">Why O2</a>
+      <a href="#" class="menu-link">Help</a>
+      <div class="right-links">
+        <a href="#" class="menu-link">My O2</a>
+        <a href="#" class="menu-link">Search</a>
+        <a href="#"><img src="basket.png" alt="Basket" class="basket-icon"></a>
+      </div>
+    </div>
+  </header>
 
+  <!-- Main Section -->
+  <section class="main-section">
+    <!-- Sign In Form Section -->
+    <div class="sign-in-form">
+      <h1>Sign in</h1>
+      <h2>Sign in to My O2</h2>
+      <form action="#">
+        <label for="username">Username (usually your email address)</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember">Remember my username</label>
+        </div>
+
+        <button type="submit" class="sign-in-button">Sign in</button>
+        <a href="#" class="forgot-password">Forgotten your username or password?</a>
+      </form>
+    </div>
+
+    <!-- Side Information Section -->
+    <div class="side-info">
+      <div class="already-customer">
+        <h2>Already an O2 customer?</h2>
+        <p>If you've got a Pay Monthly account then we've automatically registered you with My O2 and given you a username and password.</p>
+        <a href="#" class="help-link">Help me sign in</a>
+      </div>
+      <div class="not-registered">
+        <h2>Not yet registered?</h2>
+        <p>If you're a Pay As You Go customer here are just some of the benefits of registering:</p>
+        <ul>
+          <li>Check your usage and remaining balance</li>
+          <li>Set up auto top-ups</li>
+          <li>Manage O2 Rewards</li>
+        </ul>
+        <a href="#" class="register-link">Register now</a>
+      </div>
+    </div>
+  </section>
+
+</body>
 </html>
