@@ -4,7 +4,7 @@
 
 .sign-in-div-img{
     background: url(https://static.o2.co.uk/mymobile/img/default/page_header_bg.png) right top no-repeat;
-<<<<<<< HEAD
+
     background-size: 100% 100%;     
 }
 
@@ -25,8 +25,7 @@
     color: #fff;
     display: block;
     background: linear-gradient(180deg, #23236A 0, #107AC0 100%);
-=======
+
         background-size: 100% 100%;
         
->>>>>>> 0fd6eace3c14a8af4afa52ed0fb9a792a3e64e0c
 }
