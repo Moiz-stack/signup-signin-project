@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Shortcut Icon" href="https://accounts.o2.co.uk/_assets_shared/img/o2.ico" /> 
+    <link rel="Shortcut Icon" href="https://accounts.o2.co.uk/_assets_shared/img/o2.ico" />
     <title>O2 | Accounts | O2 | Accounts | Signin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +15,8 @@
     <!-- Header Section -->
     <header class="bg-white">
         <!-- Top Bar -->
-        <nav class="container mx-auto flex justify-between py-1" style="width: 72%;">
+        <nav class="container mx-auto flex justify-between py-1 px-4 sm:px-6 md:px-8 lg:w-[72%]">
+            <!-- Left-side Links (Personal | Business) -->
             <ul class="flex list-none m-0">
                 <li class="mr-2">
                     <a class="text-[#000039] border-b border-[#000039]" href="#">Personal</a>
@@ -25,34 +26,40 @@
                     <a class="text-[#4a4a4a] hover:border-b hover:border-[#4a4a4a]" href="#">Business</a>
                 </li>
             </ul>
+
+            <!-- Right-side Links (Sign in | Register) -->
             <ul class="flex ml-auto list-none m-0">
-                <li>
+                <li class="text-xs sm:text-base">
                     <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]" href="index.html">Sign
-                        in </a>
-                    <span>or</span>
+                        in</a>
+                    <span class="mx-1 sm:mx-2 lg:mx-0">or</span>
                     <a class="text-[#000039] no-underline hover:border-b hover:border-[#000039]"
                         href="registration.html">
                         Register</a>
                 </li>
             </ul>
         </nav>
+
         <!-- Main Bar -->
         <nav class="bg-[#0019a5] h-[78px] flex items-center">
-            <div class="container mx-auto px-4 flex items-center justify-between" style="width: 75%;">
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 flex items-center justify-between lg:w-[72%]">
+                <!-- Logo and Navigation -->
                 <div class="flex items-center">
-                    <img src="/signup-signin-project/Images/favicon.ico" alt="O2 Logo" class="mr-14 h-12"
+                    <img src="/signup-signin-project/Images/favicon.ico" alt="O2 Logo" class="mr-4 sm:mr-14 h-8 sm:h-12"
                         style="filter: brightness(0) invert(1);">
-                    <ul class="flex space-x-14">
-                        <li><a href="#" class="text-white hover:text-[#4194cd]">Shop</a></li>
-                        <li><a href="#" class="text-white hover:text-[#4194cd]">Why O2</a></li>
-                        <li><a href="#" class="text-white hover:text-[#4194cd]">Help</a></li>
+                    <ul class="flex space-x-6 sm:space-x-10 lg:space-x-14">
+                        <li><a href="#" class="text-white hover:text-[#4194cd] text-sm sm:text-base">Shop</a></li>
+                        <li><a href="#" class="text-white hover:text-[#4194cd] text-sm sm:text-base">Why O2</a></li>
+                        <li><a href="#" class="text-white hover:text-[#4194cd] text-sm sm:text-base">Help</a></li>
                     </ul>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#" class="text-white hover:text-gray-300 mr-4">My O2</a>
-                    <a href="#" class="text-white hover:text-gray-300 mr-4">
+
+                <!-- Action Buttons (My O2, Search, Cart) -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300 text-sm sm:text-base">My O2</a>
+                    <a href="#" class="text-white hover:text-gray-300">
                         <i class="fas fa-search"></i>
-                        Search
+                        <span class="hidden sm:inline">Search</span>
                     </a>
                     <a href="#" class="text-white hover:text-gray-300">
                         <i class="fas fa-shopping-cart"></i>
@@ -60,17 +67,17 @@
                 </div>
             </div>
         </nav>
-
     </header>
-    <!-- SIGN IN DIV -->
+
     <div class="sign-in-div-img p-8 shadow-lg w-full mt-[0.5px] mb-6">
-        <h1 class="text-5xl text-white mb-6 px-32">Sign in</h1>
+        <h1 class="text-3xl sm:text-5xl text-white mb-6 px-4 sm:px-32 lg:px-[150px] ">Sign in</h1>
     </div>
+
     <!-- Main Section -->
-    <section class="flex justify-around ml-[124.500px] mr-[124.500px]">
+    <section class="flex flex-col lg:flex-row justify-around lg:ml-[124.500px] lg:mr-[124.500px] p-4 lg:p-0">
         <!-- Sign In Form Section -->
-        <div class="bg-white p-8  shadow-sm w-[535px]">
-            <h1 class="text-3xl text-[#032B5A]">Sign in to My O2</h1>
+        <div class="bg-white p-8 shadow-sm w-full lg:w-[535px]">
+            <h1 class="text-2xl lg:text-3xl text-[#032B5A]">Sign in to My O2</h1>
             <form action="#" class="mt-6">
                 <label for="username" class="block text-sm font-medium text-[#032B5A]">Username (usually your email
                     address)</label>
@@ -79,7 +86,7 @@
 
                 <label for="password" class="block text-sm font-medium text-[#032B5A] mt-6">Password</label>
                 <input type="password" id="password" name="password" required
-                    class="w-full mt-2 p-2 border border-gray-300 hover:border-[#99CBEB] rounded-md focus:outline-none ">
+                    class="w-full mt-2 p-2 border border-gray-300 hover:border-[#99CBEB] rounded-md focus:outline-none">
 
                 <div class="flex items-center mt-6">
                     <input type="checkbox" id="remember" name="remember"
@@ -88,7 +95,7 @@
                 </div>
 
                 <button type="submit"
-                    class="w-[80px] bg-[#D8D8D8] text-white py-2 mt-6 rounded-md border hover:bg-[#F8F8F8] transition">Sign
+                    class="w-full lg:w-[80px] bg-[#D8D8D8] text-white py-2 mt-6 rounded-md border hover:bg-[#F8F8F8] transition">Sign
                     in</button>
                 <a href="#" class="inline-flex items-center mt-4 text-[#419eda] text-sm hover:underline">
                     <span class="bg-sky-500 rounded-full p-1 text-white w-4 h-4 flex justify-center items-center mr-2">
@@ -97,16 +104,13 @@
                     Forgotten your username or password?
                 </a>
 
-
-                <div class="flex mt-4 mb-4">
-
-                    <hr class="border-[#032B5A] h-px w-[40%] mt-3.5" />
+                <div class="flex mt-4 mb-4 items-center">
+                    <hr class="border-[#032B5A] h-px w-[40%]">
                     <span class="text-black px-5">or</span>
-                    <hr class="border-[#032B5A] h-px w-[40%] mt-3.5" />
-
+                    <hr class="border-[#032B5A] h-px w-[40%]">
                 </div>
 
-                <div class="bg-white  rounded p-5 mt-4 custom-border ">
+                <div class="bg-white rounded p-5 mt-4  custom-border">
                     <h3 class="text-[16px] font-bold">Use your Virgin Media O2 ID</h3>
                     <p class="text-gray-600 text-sm pt-3.5 pb-3.5">
                         If you've linked your Virgin Media and O2 details to create a new Virgin Media O2
@@ -114,7 +118,7 @@
                         <a href="#" class="underline text-blue-500 text-sm">Find out more</a>
                     </p>
                     <button
-                        class="mt-3.5 mb-3.5 text-sm bg-[#0019a5] text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline">
+                        class="mt-3.5 mb-3.5 w-full lg:w-auto text-sm bg-[#0019a5] text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline">
                         Sign in with a Virgin Media O2 ID
                     </button>
                 </div>
@@ -122,9 +126,9 @@
         </div>
 
         <!-- Side Information Section -->
-        <div class="p-8">
+        <div class="p-8 w-full lg:w-auto mt-8 lg:mt-0">
             <div class="mb-7">
-                <h2 class="text-[26px]">Already an O2 customer?</h2>
+                <h2 class="text-xl lg:text-[26px]">Already an O2 customer?</h2>
                 <p class="mt-4">If you've got a Pay Monthly account then we've automatically registered you with My O2
                     and given you a username and password.</p>
                 <a href="#" class="text-[#419eda] mt-4 flex items-center hover:underline">
@@ -133,10 +137,10 @@
                     </span>
                     <span class="ml-2">Help me sign in</span>
                 </a>
-
             </div>
+
             <div>
-                <h2 class="text-[26px] ">Not yet registered?</h2>
+                <h2 class="text-xl lg:text-[26px]">Not yet registered?</h2>
                 <p class="pt-3.5 pb-3.5 text-sm">If you're a Pay As You Go customer here are just some of the benefits
                     of registering:
                 </p>
@@ -148,52 +152,56 @@
                 <p class="pt-3.5 pb-3.5 text-sm">O2 Wifi customer? You can register to manage your account here,
                     whatever network you're on.</p>
                 <a href="#" class="text-[#419eda] pt-3.5 pb-3.5 flex items-center hover:underline">
-                    <span class="bg-sky-500 rounded-full p-1 text-white  w-4 h-4 flex justify-center items-center">
+                    <span class="bg-sky-500 rounded-full p-1 text-white w-4 h-4 flex justify-center items-center">
                         <i class="fa-solid fa-chevron-right text-[10px]"></i>
                     </span>
                     <span class="ml-2">Register now</span>
                 </a>
-
             </div>
         </div>
     </section>
 
     <!-- Stay Safe Div -->
-    <div class="mt-4 pl-8 pt-8 mb-16 ml-[124.500px] mr-[124.500px]">
-        <h3 class="text-[22px] font-light">Stay safe</h3>
-        <p class="text-[14px] pb-3.5 pt-3.5">We'll never email or text asking you to send or verify personal, financial
+    <div class="mt-4 p-4 lg:pl-8 lg:pt-8 mb-16 lg:ml-[124.500px] lg:mr-[124.500px]">
+        <h3 class="text-lg lg:text-[22px] font-light">Stay safe</h3>
+        <p class="text-sm lg:text-[14px] pb-3.5 pt-3.5">We'll never email or text asking you to send or verify personal,
+            financial
             or password details. Make sure you keep your details safe and never give them out, even if it looks like the
             email or text came from us.</p>
     </div>
+
     <!-- Footer -->
-    <footer class="footer">
-        <div class="pl-2 pr-2 pt-8 pb-6 ml-[124.500px] mr-[124.500px] ">
-            <div class="flex flex-col md:flex-row  justify-around space-y-8 md:space-y-0">
+    <footer class="footer bg-[#0019a5] text-white">
+        <div class="px-4 sm:px-8 lg:px-[124.500px] pt-8 pb-6">
+            <!-- Footer Links Section -->
+            <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+                <!-- First Column (Icons and Links) -->
                 <div class="space-y-4">
-                    <div class="flex items-center space-x-4 ">
+                    <div class="flex items-center space-x-4">
                         <i class="fas fa-store border-2 border-white rounded-full p-2"></i>
                         <a href="#" class="hover:underline">Find a store</a>
                     </div>
-                    <div class="flex items-center space-x-4 ">
+                    <div class="flex items-center space-x-4">
                         <i class="fas fa-wifi border-2 border-white rounded-full text-[12px] p-2"></i>
                         <a href="#" class="hover:underline">Check our network</a>
                     </div>
-                    <div class="flex items-center space-x-4 ">
+                    <div class="flex items-center space-x-4">
                         <i class="fas fa-user border-2 border-white rounded-full p-2"></i>
                         <a href="#" class="hover:underline">Sign in to My O2</a>
                     </div>
-                    <div class="flex items-center space-x-4 ">
-                        <i class="fas fa-truck border-2 border-white rounded-full p-2 text-[12px] "></i>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-truck border-2 border-white rounded-full p-2 text-[12px]"></i>
                         <a href="#" class="hover:underline">Track my order</a>
                     </div>
-                    <div class="flex items-center space-x-4 ">
+                    <div class="flex items-center space-x-4">
                         <i class="fas fa-search border-2 border-white rounded-full p-2"></i>
                         <a href="#" class="hover:underline">Search</a>
                     </div>
                 </div>
 
+                <!-- Second Column (Popular in Shop) -->
                 <div>
-                    <h2 class="text-2xl  mb-2">Popular in shop</h2>
+                    <h2 class="text-xl lg:text-2xl mb-2">Popular in shop</h2>
                     <ul class="space-y-1.5 text-sm">
                         <li>iPhone 16 Pro Max</li>
                         <li>iPhone 16 Pro</li>
@@ -208,15 +216,17 @@
                         <li>Virgin Media broadband deals</li>
                     </ul>
                 </div>
+
+                <!-- Third Column (Help and Shop) -->
                 <div>
-                    <h2 class="text-2xl  mb-2">Help and support</h2>
+                    <h2 class="text-xl lg:text-2xl mb-2">Help and support</h2>
                     <ul class="space-y-1.5 text-sm">
                         <li>Help home</li>
                         <li>Contact us</li>
                         <li>My O2</li>
                         <li>Collection and delivery</li>
                     </ul>
-                    <h2 class="text-2xl  mt-4 mb-2">Shop</h2>
+                    <h2 class="text-xl lg:text-2xl mt-4 mb-2">Shop</h2>
                     <ul class="space-y-1.5 text-sm">
                         <li>Phones</li>
                         <li>Tablets</li>
@@ -226,31 +236,31 @@
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col ml-20">
-                <div class="mt-8 flex items-center space-x-8 pl-2 text-2xl">
+
+            <!-- Social Media and Legal Section -->
+            <div class="mt-8">
+                <div class="flex justify-center md:justify-start items-center space-x-4 text-2xl">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="mt-8 text-xs text-gray-400">
-                    <p class="pl-2 pb-4 text-white">
+                <div class="mt-8 text-xs text-gray-400 text-center md:text-left">
+                    <p class="pb-4">
                         About O2 | Better Connections Plan | Careers | News & PR | Sponsorship | Virgin Media and O2
                     </p>
-                    <p class="pl-2 pb-4 text-white">
+                    <p class="pb-4">
                         Accessibility | Terms & Conditions | Privacy policy | Cookie policy | Modern Slavery Statement ©
                         2024 Telefónica UK Limited
                     </p>
-                    <p class="pl-2 pb-4 text-white">
+                    <p class="pb-4">
                         In relation to consumer credit, Telefónica UK Limited is authorised and regulated by the
-                        Financial
-                        Conduct Authority (Reference Number 718822)
+                        Financial Conduct Authority (Reference Number 718822)
                     </p>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
