@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .sign-in-div-img{
     background: url(https://static.o2.co.uk/mymobile/img/default/page_header_bg.png) right top no-repeat;
     background-size: 100% 100%;     
@@ -25,3 +26,12 @@
     display: block;
     background: linear-gradient(180deg, #23236A 0, #107AC0 100%);
 }
+
+
+.hero-section{
+    background-image: url(/signup-signin-project/Images/iphone\ img\ with\ text.jpeg);
+    background-position: center;
+}
+
+
+
