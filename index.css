@@ -4,7 +4,7 @@
 
 
 .sign-in-div-img{
-    background: url(https://static.o2.co.uk/mymobile/img/default/page_header_bg.png) right top no-repeat;
+    background: url('/signup-signin-project/Images/page_header_bg.png') right top no-repeat;
     background-size: 100% 100%;     
 }
 
